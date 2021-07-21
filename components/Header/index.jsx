@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useRouter } from 'next/router'
 import { Dropdown, Menu, Drawer } from 'antd'
 import { Nav, Navbar, Container } from 'react-bootstrap'
 
@@ -50,9 +51,10 @@ const productMenu = (
 )
 
 const Header = () => {
+  const router = useRouter()
   const [visible, setVisible] = useState(false)
 
-  const showDrawer = () => setVisible(true);
+  const showDrawer = () => setVisible(true)
   const onClose = () => setVisible(false)
 
   return (
@@ -100,7 +102,7 @@ const Header = () => {
                 <Nav.Link className="mx-2">Produk</Nav.Link>
               </Dropdown>
 
-              <Link href="/career" passHref>
+              <Link href="/business-opportunities" passHref>
                 <Nav.Link as="a">Peluang Bisnis</Nav.Link>
               </Link>
 
@@ -120,6 +122,26 @@ const Header = () => {
 
         </Container>
       </Navbar>
+
+      <style jsx>{`
+      :global(.navbar-light .navbar-nav .nav-link) {
+        color: rgba(0, 0, 0, 0.7);
+      }
+      :global(.navbar-light .navbar-nav .nav-link:focus, .navbar-light
+          .navbar-nav
+          .nav-link:hover) {
+        border-radius: 2px;
+        color: rgba(0, 0, 0, 0.95);
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+      :global(.navbar-shadow-bottom) {
+        box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 15px !important;
+      }
+      :global(.nav-mobile:hover){
+        color: #212529;
+        background-color: rgba(0,0,0,.075);
+      }
+      `}</style>
     </>
   )
 }
