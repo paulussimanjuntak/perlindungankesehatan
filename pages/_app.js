@@ -1,5 +1,7 @@
 import Head from 'next/head'
 
+import Layout from 'components/Layout'
+
 import 'antd/dist/antd.css'
 import '/styles/utility.min.css'
 import '/styles/fontawesome/css/all.min.css'
@@ -16,9 +18,12 @@ const App = ({ Component, pageProps }) => {
         <meta name="description" content="Perlindungan Kesehatan" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href={process.env.NEXT_PUBLIC_DOMAIN} />
-        {/* <link rel="icon" href="/static/images/ico.png" /> */}
+        <link rel="icon" href="/images/ico.png" />
       </Head>
-      <Component {...pageProps} />
+
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
 
       <style jsx global>{`
       body {
