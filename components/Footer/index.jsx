@@ -92,7 +92,7 @@ const Footer = () => {
                 </a>
               </p>
               <p className="text-footer">
-                <i className="fal fa-map-marker-alt mr-2" /> Jalan Hangtuah No 1 Denpasar, Bali, Indonesia 80228
+                <i className="fal fa-map-marker-alt mr-2" /> Jalan Hangtuah No 1 Sanur, Bali, Indonesia 80228
               </p>
             </Col>
             <Col lg={2} sm={12}>

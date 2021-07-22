@@ -4,11 +4,9 @@ import Layout from 'components/Layout'
 
 import 'antd/dist/antd.css'
 import '/styles/utility.min.css'
-import 'slick-carousel/slick/slick.css'
 import '/styles/fontawesome/css/all.min.css'
 import 'antd-button-color/dist/css/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import 'slick-carousel/slick/slick-theme.css'
 
 const App = ({ Component, pageProps }) => {
   return (
