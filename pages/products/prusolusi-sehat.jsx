@@ -1,6 +1,8 @@
 import { Image } from 'antd'
 import { Container, Card, Row, Col } from 'react-bootstrap'
 
+import { WA_LINK } from 'data/product'
+
 import Link from 'next/link'
 import Button from 'antd-button-color'
 
@@ -45,7 +47,7 @@ const ProductItem = () => {
             <p>
               PRUSolusi Sehat  adalah Produk Asuransi Kesehatan Tradisional yang memberikan solusi lengkap dan fleksibel untuk perlindungan kesehatan dengan pembayaran manfaat sesuai tagihan rumah sakit untuk beberapa manfaat berdasarkan plan yang dipilih pada Tabel Manfaat PRUSolusi Sehat serta jangkauan perlindungan hingga seluruh dunia yang memberikan fleksibilitas atas pilihan Perlindungan kesehatan Anda.
             </p>
-            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
+            <Link href={WA_LINK}>
               <a target="_blank">
                 <Button
                   type="success"

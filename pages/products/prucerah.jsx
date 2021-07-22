@@ -1,5 +1,7 @@
 import { Container, Card, Row, Col } from 'react-bootstrap'
 
+import { WA_LINK } from 'data/product'
+
 import Link from 'next/link'
 import Button from 'antd-button-color'
 
@@ -39,7 +41,7 @@ const ProductItem = () => {
             <p>
               Memperkenalkan Asuransi Jiwa Syariah PRUCerah Produk Asuransi Dwiguna yang memberikan Perlindungan atas Jaminan Pendidikan Anak atau orang yang Anda sayangi.  Terdapat Manfaat Dana Pendidikan, yang memberikan manfaat berupa Penarikan Tunai Sekaligus serta Penarikan Tunai Bulanan selama 4 tahun. Selain itu untuk menjamin keberlangsungan Pendidikan Anak Anda maka produk ini memberikan Manfaat Bebas Kontribusi jika Anda Meninggal Dunia, Terkena Kondisi Kritis atau mengalami Cacat Tetap dan Total.
             </p>
-            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
+            <Link href={WA_LINK}>
               <a target="_blank">
                 <Button
                   type="success"

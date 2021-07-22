@@ -1,4 +1,5 @@
 import { Container, Card, Row, Col } from 'react-bootstrap'
+import { WA_LINK } from 'data/product'
 
 import Link from 'next/link'
 import Button from 'antd-button-color'
@@ -46,7 +47,7 @@ const ProductItem = () => {
               <br /> <br />
               PRUTotal Critical Protection memberikan perlindungan atas risiko terkena penyakit - penyakit baru yang akan muncul di kemudian hari layaknya jaring pengaman serta sebagai perlindungan tambahan atas Asuransi Tambahan Kondisi Kritis yang telah dimiliki saat ini.
             </p>
-            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
+            <Link href={WA_LINK}>
               <a target="_blank">
                 <Button
                   type="success"

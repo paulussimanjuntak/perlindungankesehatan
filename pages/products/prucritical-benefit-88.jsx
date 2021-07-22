@@ -1,4 +1,5 @@
 import { Container, Card, Row, Col } from 'react-bootstrap'
+import { WA_LINK } from 'data/product'
 
 import Link from 'next/link'
 import Button from 'antd-button-color'
@@ -54,7 +55,7 @@ const ProductItem = () => {
             <p>
               Pembayaran 100% UP pada usia 88 tahun apabila Tertanggung masih hidup dan Polis tetap aktif.
             </p>
-            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
+            <Link href={WA_LINK}>
               <a target="_blank">
                 <Button
                   type="success"

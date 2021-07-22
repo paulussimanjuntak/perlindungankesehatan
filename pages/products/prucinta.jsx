@@ -1,4 +1,5 @@
 import { Container, Card, Row, Col } from 'react-bootstrap'
+import { WA_LINK } from 'data/product'
 
 import Link from 'next/link'
 import Button from 'antd-button-color'
@@ -46,7 +47,7 @@ const ProductItem = () => {
 
               Selain memberikan perlindungan selama 20 tahun, produk ini juga dapat diperpanjang masa kepesertaannya dengan tanpa pemeriksaan kesehatan dan manfaat jatuh tempo dalam bentuk Nilai Tunai atas beban Dana Nilai Tunai di akhir masa kepesertaan, dan manfaat lainnya termasuk perlindungan terhadap risiko meninggal dunia karena kecelakaan selama periode Mudik atau Balik Lebaran. Detail ketentuan mengenai perpanjangan masa kepesertaan dapat dilihat pada Polis.
             </p>
-            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
+            <Link href={WA_LINK}>
               <a target="_blank">
                 <Button
                   type="success"

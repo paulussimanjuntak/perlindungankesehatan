@@ -1,4 +1,5 @@
 import { Container, Card, Row, Col } from 'react-bootstrap'
+import { WA_LINK } from 'data/product'
 
 import Link from 'next/link'
 import Button from 'antd-button-color'
@@ -47,7 +48,7 @@ const ProductItem = () => {
               Perlindungan Asuransi Jiwa Tradisional hingga usia 99 tahun dengan masa pembayaran Premi yang dapat dipilih sebagai warisan siap pakai untuk menjamin keberlangsungan masa depan.
 
             </p>
-            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
+            <Link href={WA_LINK}>
               <a target="_blank">
                 <Button
                   type="success"

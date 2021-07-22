@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Button from 'antd-button-color'
 
+import { WA_LINK } from 'data/product'
 import { aboutUsMenuData } from 'data/navbar'
 
 const year = new Date();
@@ -14,7 +15,7 @@ const footerLinks = [
 ];
 
 const socialMedia = [
-  { icon: "fab fa-whatsapp", link: process.env.NEXT_PUBLIC_WA_TEMPLATE },
+  { icon: "fab fa-whatsapp", link: WA_LINK },
   { icon: "fab fa-instagram", link: process.env.NEXT_PUBLIC_INSTAGRAM },
   { icon: "fab fa-facebook-f", link: process.env.NEXT_PUBLIC_FACEBOOK },
 ];

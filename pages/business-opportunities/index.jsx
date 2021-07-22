@@ -1,4 +1,5 @@
 import { Col, Row, Card, Container } from 'react-bootstrap'
+import { WA_LINK } from 'data/product'
 
 import Image from 'next/image'
 import Button from 'antd-button-color'
@@ -30,7 +31,7 @@ Terbuka untuk UMUM, pria-wanita, tanpa syarat pendidikan minimal maupun pengalam
                   <br /> <br />
                   Profesi Agen Asuransi merupakan salah satu profesi yang menjanjikan masa depan yang baik, apabila profesi ini dijalani dengan komitmen, kesungguhan, dan mindset yang tepat. Pertumbuhan karir juga menjadi salah satu yang bisa anda dapatkan di Industri Bisnis Asuransi Prudential. 
                   <br /> <br />
-                  <a href={process.env.NEXT_PUBLIC_WA_TEMPLATE} target="_blank" rel="noreferrer">
+                  <a href={WA_LINK} target="_blank" rel="noreferrer">
                     <Button
                       type="success"
                       size="large"

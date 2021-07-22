@@ -1,3 +1,5 @@
+export const WA_LINK = `https://api.whatsapp.com/send?phone=${process.env.NEXT_PUBLIC_TELEPON}&text=Hi%2C%20Saya%20ingin%20mengetahui%20lebih%20lanjut%3A%0ANama%3A%20%0AUsia%3A%20%0APekerjaan%3A%20%0APesan%3A%20`
+
 export const proteksi_kesehatan = [
   {
     link: 'pruprime-healthcare-plus',
