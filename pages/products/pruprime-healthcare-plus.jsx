@@ -44,7 +44,7 @@ const ProductItem = () => {
             <p>
               PRUPrime Healthcare Plus atau populer disebut PPH Plus adalah produk baru Asuransi Kesehatan yang baru diluncurkan oleh Prudential pada awal tahun 2019. Sehingga ini merupakan produk yang masih sangat baru dan luar biasa bagus manfaat yang ditawarkan sekaligus murah meriah. Asuransi Kesehatan berguna untuk melindungi kita dari tagihan biaya rumah sakit yang tidak terduga.
             </p>
-            <Link href={'#'}>
+            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
               <a target="_blank">
                 <Button
                   type="success"

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { Dropdown, Menu, Drawer } from 'antd'
 import { Nav, Navbar, Container } from 'react-bootstrap'
 
-import { aboutUsMenuData, productMenuData } from 'data/navbar'
+import { aboutUsMenuData, productMenuData, mobileNavigation } from 'data/navbar'
 
 import Link from 'next/link'
 import Image from 'next/image'
@@ -122,6 +122,25 @@ const Header = () => {
 
         </Container>
       </Navbar>
+
+      <Drawer
+        placement="right"
+        zIndex="1030"
+        onClose={onClose}
+        visible={visible}
+        closeIcon={ <i className="fas fa-times" /> }
+        className="d-block d-sm-block d-md-block d-lg-none d-xl-none"
+      >
+        <Nav className="flex-column mt-3">
+          {mobileNavigation.map((data, i) => (
+            <Link href={data.link} key={i} passHref>
+              <Nav.Link as="a" className="border-bottom nav-mobile text-reset" onClick={onClose}>
+                {data.label}
+              </Nav.Link>
+            </Link>
+          ))}
+        </Nav>
+      </Drawer>
 
       <style jsx>{`
       :global(.navbar-light .navbar-nav .nav-link) {

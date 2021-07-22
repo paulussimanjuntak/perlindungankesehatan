@@ -11,6 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 const App = ({ Component, pageProps }) => {
+  console.log(process.env.NEXT_PUBLIC_WA_TEMPLATE)
   return (
     <> 
       <Head>

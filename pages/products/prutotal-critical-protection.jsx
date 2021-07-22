@@ -46,7 +46,7 @@ const ProductItem = () => {
               <br /> <br />
               PRUTotal Critical Protection memberikan perlindungan atas risiko terkena penyakit - penyakit baru yang akan muncul di kemudian hari layaknya jaring pengaman serta sebagai perlindungan tambahan atas Asuransi Tambahan Kondisi Kritis yang telah dimiliki saat ini.
             </p>
-            <Link href={'#'}>
+            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
               <a target="_blank">
                 <Button
                   type="success"

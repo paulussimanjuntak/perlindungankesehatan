@@ -54,7 +54,7 @@ const ProductItem = () => {
             <p>
               Pembayaran 100% UP pada usia 88 tahun apabila Tertanggung masih hidup dan Polis tetap aktif.
             </p>
-            <Link href={'#'}>
+            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
               <a target="_blank">
                 <Button
                   type="success"

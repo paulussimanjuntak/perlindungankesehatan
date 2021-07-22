@@ -47,7 +47,7 @@ const ProductItem = () => {
               Perlindungan Asuransi Jiwa Tradisional hingga usia 99 tahun dengan masa pembayaran Premi yang dapat dipilih sebagai warisan siap pakai untuk menjamin keberlangsungan masa depan.
 
             </p>
-            <Link href={'#'}>
+            <Link href={process.env.NEXT_PUBLIC_WA_TEMPLATE}>
               <a target="_blank">
                 <Button
                   type="success"

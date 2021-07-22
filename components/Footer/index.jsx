@@ -14,7 +14,7 @@ const footerLinks = [
 ];
 
 const socialMedia = [
-  { icon: "fab fa-whatsapp", link: process.env.NEXT_PUBLIC_YOUTUBE },
+  { icon: "fab fa-whatsapp", link: process.env.NEXT_PUBLIC_WA_TEMPLATE },
   { icon: "fab fa-instagram", link: process.env.NEXT_PUBLIC_INSTAGRAM },
   { icon: "fab fa-facebook-f", link: process.env.NEXT_PUBLIC_FACEBOOK },
 ];

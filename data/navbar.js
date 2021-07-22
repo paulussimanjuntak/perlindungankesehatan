@@ -33,3 +33,10 @@ export const productMenuData = [
     ]
   }
 ]
+
+export const mobileNavigation = [
+  { label: "Home", link: "/" },
+  { label: "Produk", link: "/products" },
+  { label: "Peluang Bisnis", link: "/business-opportunities" },
+  { label: "Tentang Kami", link: "/about" },
+]
