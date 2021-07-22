@@ -58,7 +58,7 @@ const Footer = () => {
               {aboutUsMenuData.map((data, i) => (
                 <div key={i}>
                   {data.link ? (
-                    <Link href={`/about-us/${data.link}`}>
+                    <Link href={`/about/${data.link}`}>
                       <a className="link-section">
                         <p>{data.label}</p>
                       </a>

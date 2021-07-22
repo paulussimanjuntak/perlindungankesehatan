@@ -13,7 +13,7 @@ const aboutUsMenu = (
     {aboutUsMenuData.map((data, i) => (
       <Menu.Item key={i} className="text-capitalize">
         {data.link ? (
-          <Link href={`/customer/${data.link}`}>
+          <Link href={`/about/${data.link}`}>
             <a className="text-decoration-none">{data.label}</a>
           </Link>
         ) : (
@@ -112,7 +112,7 @@ const Header = () => {
                 trigger={["hover"]}
                 placement="bottomCenter"
                 overlayClassName="position-fixed"
-                onClick={() => router.push("/customer")}
+                onClick={() => router.push("/about")}
               >
                 <Nav.Link className="mx-2">Tentang Kami</Nav.Link>
               </Dropdown>
