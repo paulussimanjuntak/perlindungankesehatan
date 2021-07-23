@@ -100,6 +100,7 @@ const ContacUs = () => {
           setContactUs(contactForm);
         })
         .catch((err) => {
+          console.log(err.response)
           setLoading(false);
           const errDetail = err.response.data.detail;
           if (typeof errDetail === "string") {
