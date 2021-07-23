@@ -178,7 +178,7 @@ const Home = () => {
                 quality={60}
                 width={267}
                 height={267}
-                src={'/images/profile.png'} 
+                src={'/images/kumala_devi_wibowo.jpeg'} 
                 className="img-fit mb-2 mb-md-0 mb-lg-0 rounded-circle shadow" 
                 preview={false}
                 alt={process.env.NEXT_PUBLIC_APP_NAME + ' profile'}
