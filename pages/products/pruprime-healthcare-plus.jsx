@@ -1,4 +1,5 @@
-import { Container, Card, Row, Col } from 'react-bootstrap'
+import { Image } from 'antd'
+import { Container, Card, Row, Col, Carousel } from 'react-bootstrap'
 import { WA_LINK } from 'data/product'
 
 import Link from 'next/link'
@@ -35,6 +36,21 @@ const benefitsData = [
 const ProductItem = () => {
   return (
     <>
+      <Carousel
+        controls={false}
+        indicators={false}
+      >
+        <Carousel.Item>
+          <Image
+            preview={false}
+            width="100%"
+            className="d-block w-100"
+            src="/images/banner/pph-d.png"
+            alt={process.env.NEXT_PUBLIC_APP_NAME + ' pph'}
+          />
+        </Carousel.Item>
+      </Carousel>
+
       <section className="pb-0">
         <Container>
           <h2 className="font-weight-normal fs-24-s mb-3">{title}</h2>

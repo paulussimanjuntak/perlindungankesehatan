@@ -1,15 +1,39 @@
 import { Image } from 'antd'
 import { Container, Row, Col, Card } from 'react-bootstrap'
 
+import { bannerSettings } from 'lib/slickSetting'
+
 import Link from 'next/link'
+import Slider from 'react-slick'
 import Button from 'antd-button-color'
+
+import CardBanner from 'components/CardBanner'
+
+const banners = [
+  { image: "/images/banner/pph.png", link: "/products/pruprime-healthcare-plus" },
+  { image: "/images/banner/prucerah.png", link: "/products/prucerah" },
+  { image: "/images/banner/prucinta.png", link: "/products/prucinta" },
+  { image: "/images/banner/prucritical.png", link: "/products/prucritical-benefit-88" },
+  { image: "/images/banner/prusolusi.png", link: "/products/prusolusi-sehat" },
+  { image: "/images/banner/prutop.png", link: "/products/prutotal-critical-protection" },
+  { image: "/images/banner/pruwarisan.png", link: "/products/pruwarisan" },
+]
 
 const Home = () => {
   return (
     <>
+      <section className="banner-section pb-0 pt-0">
+        <Slider {...bannerSettings}>
+          {banners.map((data, i) => (
+            <Col key={i} className="pb-5 px-0 px-sm-2 pt-sm-5">
+              <CardBanner image={data.image} link={data.link} />
+            </Col>
+          ))}
+        </Slider>
+      </section>
 
       <Container>
-        <section className="p-t-0-s p-t-60-m p-t-60-t">
+        <section className="p-t-0 p-t-10-m pt-lg-5">
           <Row className="align-items-center">
             <Col lg={6} md={12} sm={12}>
               <h4 className="fs-20-s text-capitalize">
@@ -129,8 +153,9 @@ const Home = () => {
             <Row className="align-items-center">
               <Col sm={12} md={6}>
                 <Image 
+                  preview={false}
                   src="/images/about.jpeg"
-                  className="w-100 bor-rad-10px mb-4 mb-md-0 mb-lg-0"
+                  className="w-100 bor-rad-10px mb-4 mb-md-0 mb-lg-0 shadow"
                   alt={process.env.NEXT_PUBLIC_APP_NAME + ' about'} 
                 />
               </Col>
@@ -189,6 +214,55 @@ const Home = () => {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
+
+      @media only screen and (min-width: 600px){
+        :global(.banner-section .slick-list){
+          padding-top: 30px !important;
+          padding-bottom: 24px !important;
+          padding-left: 20% !important;
+          padding-right: 20% !important;
+          margin-left: 0px;
+          margin-right: 0px;
+        }
+        :global(.banner-section .slick-slide){
+          transform: scale(0.8, 0.8);
+          transition: transform 0.3s;
+        }
+        :global(.banner-section .slick-slide.slick-center){
+          transform: scale(1.2);
+        }
+        :global(.banner-section .slick-prev, .banner-section .slick-next){
+          opacity: 0;
+          transition: .3s all;
+        }
+        :global(.banner-section:hover .slick-prev, .banner-section:hover .slick-next){
+          opacity: 1;
+        }
+        :global(.slick-next) {
+          right: 25px;
+        }
+        :global(.slick-prev) {
+          left: 25px;
+        }
+      }
+      @media only screen and (max-width: 600px){
+        :global(.banner-section .slick-slider > .slick-dots){
+          bottom: -15px;
+        }
+        :global(.slick-next) {
+          right: 10px;
+          top: 45%;
+        }
+        :global(.slick-prev) {
+          left: 10px;
+          top: 45%;
+        }
+      }
+      @media only screen and (max-width: 460px){
+        :global(.slick-next, .slick-prev) {
+          top: 40%;
+        }
       }
 
       `}</style>
